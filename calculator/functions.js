@@ -5,7 +5,7 @@ const functions = {
 
 	multiply : (num1, num2) => (num1 && num2) ? num1 * num2 : (num1 && !(num2)) ? num1 : 0  ,
 
-	devide   : (num1, num2) => (num1 && num2 && num2 != 0) ? num1 / num2 : (num1 && !(num2)) ? num1 : 0
+	devide   : (num1, num2) => (num1 && num2 && num2 != 0) ? num1 / num2 : 0
 
 };
 module.exports = functions;

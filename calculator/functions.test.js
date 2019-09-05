@@ -62,6 +62,24 @@ describe('Calculator functions', () => {
 		});
 	});
 
-	describe('When calling divide function', () => {});
+	describe('When calling divide function', () => {
+		test('it should return 4 when deviding 16 by 4', () => {
+			expect(functions.devide(16, 4)).toBe(4);
+		});
+		test('it should return true or 1 when deviding 4 by 4', () => {
+			expect(functions.devide(4, 4)).toBeTruthy();
+			expect(functions.devide(4, 4)).toBe(1);
+		});
+		test('it should return false or 0 when deviding 4 by 0', () => {
+			expect(functions.devide(4, 0)).toBeFalsy();
+			expect(functions.devide(4, 0)).toBe(0);
+		});
+		test('it should return 0 when deviding 0 by 4', () => {
+			expect(functions.devide(0, 4)).toBe(0);
+		});
+		test('it should return 0 when there is no arguments', () => {
+			expect(functions.devide()).toBe(0);
+		});
+	});
 });
 
