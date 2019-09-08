@@ -1,5 +1,4 @@
 const reverse = require('./reverse');
-//test('', () => {});
 describe('Reverse function', () => {
 	test('it should return esrevorcim when the argument is microverse', () => {
 		expect(reverse('microverse')).toEqual('esrevorcim')

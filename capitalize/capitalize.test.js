@@ -1,5 +1,5 @@
 const capy = require('./capitalize');
-//test('', () => {});
+
 describe('Capitalize function', () => {
 	test('it should return Microverse when the argument is microverse', () => {
 		expect(capy('microverse')).toEqual('Microverse')

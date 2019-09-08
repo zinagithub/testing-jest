@@ -1,5 +1,4 @@
 const functions = require('./functions');
-//test('', () => {});
 
 describe('Calculator functions', () => {
 	describe('When calling add function', () => {

@@ -1,7 +1,6 @@
 const caesar = require('./caesar_ cipher');
-//i took these tests from the challenge caesar cipher of hackerrank.com
 describe('caesar cipher function', () => {
-	test('it should return "Lipps_Asvph!" when argument are ("Ciphering.",4)', () => {
+	test('it should return "Lipps_Asvph!" when argument are ("Hello_World!",4)', () => {
 		expect(caesar('Hello_World!',4)).toEqual('Lipps_Asvph!')
 	});
 	test('it should return "Ciphering." when argument are ("Ciphering.",26)', () => {
