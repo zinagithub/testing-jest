@@ -16,7 +16,7 @@ $ node -v
 $ npm -v
   6.10.3
 
-## Clone project
+Clone project
 ```
 $ git clone https://github.com/zinagithub/testing-jest.git
 ```

@@ -70,8 +70,7 @@ describe('Calculator functions', () => {
 			expect(functions.devide(4, 4)).toBe(1);
 		});
 		test('it should return false or 0 when deviding 4 by 0', () => {
-			expect(functions.devide(4, 0)).toBeFalsy();
-			expect(functions.devide(4, 0)).toBe(0);
+			expect(functions.devide(4, 0)).toEqual('infinity')
 		});
 		test('it should return 0 when deviding 0 by 4', () => {
 			expect(functions.devide(0, 4)).toBe(0);
