@@ -10,20 +10,20 @@ function maxInterval(elm) {
   }  
   return 122;
 }
-function caesarCipher(s, k){   
-  k = k % 26;
+function caesarCipher(s, k) {   
+  const kk = k % 26;
   const arraySbis = s.split('').map(function (elm) {
   if (/[A-Z]|[a-z]/.test(elm) === false) {
     return elm;
   }
   const min = minInterval(elm);
   const max = maxInterval(elm);
-  if (elm.charCodeAt(0) + k > max) {
+  if (elm.charCodeAt(0) + kk > max) {
     const val1 =max - elm.charCodeAt(0);
-    return String.fromCharCode((min + (k - val1  - 1 ) )); 
+    return String.fromCharCode((min + (kk - val1  - 1 ) )); 
   }
   else
-    return String.fromCharCode(elm.charCodeAt(0) + k);
+    return String.fromCharCode(elm.charCodeAt(0) + kk);
     
 });    
   return (arraySbis.join(''));
