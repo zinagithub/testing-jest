@@ -1,23 +1,23 @@
-const analyse_ = require('./analyse');
+const myAnalyse = require('./analyse');
 
 describe('Analyse array function', () => {
 
 	it('it should returns an object when calling analyse_([1,8,3,4,2,6])', () => {
-        expect(typeof analyse_([1,8,3,4,2,6])).toBe('object');
+        expect(typeof myAnalyse([1,8,3,4,2,6])).toBe('object');
     });
 
 	it('it should returns 4 as the average of the array [1,8,3,4,2,6]', () => {
-       expect(analyse_([1,8,3,4,2,6]).average).toEqual(4);
+       expect(myAnalyse([1,8,3,4,2,6]).average).toEqual(4);
     });
     it('it should returns 1 as the minimum value of array [1,8,3,4,2,6]', () => {
-       expect(analyse_([1,8,3,4,2,6]).min).toEqual(1);
+       expect(myAnalyse([1,8,3,4,2,6]).min).toEqual(1);
     });
 
     it('it should returns 8 as the maximum of the array [1,8,3,4,2,6]', () => {
-       expect(analyse_([1,8,3,4,2,6]).max).toEqual(8);
+       expect(myAnalyse([1,8,3,4,2,6]).max).toEqual(8);
     });
 
     it('it should returns 6 as the length of the array [1,8,3,4,2,6]', () => {
-       expect(analyse_([1,8,3,4,2,6]).length).toEqual(6);
+       expect(myAnalyse([1,8,3,4,2,6]).length).toEqual(6);
     });
 });

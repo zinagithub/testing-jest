@@ -1,4 +1,4 @@
-const caesar = require('./caesar_ cipher');
+const caesar = require('./caesar_cipher');
 describe('caesar cipher function', () => {
 	test('it should return "Lipps_Asvph!" when argument are ("Hello_World!",4)', () => {
 		expect(caesar('Hello_World!',4)).toEqual('Lipps_Asvph!')

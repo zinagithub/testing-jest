@@ -1,9 +1,10 @@
 function caesarCipher(s, k) {   
-var arrayS    = s.split("");
+//var arrayS    = s.split("");
     k = k % 26;
-var arraySbis = arrayS.map(function(elm){
-    if (/[A-Z]|[a-z]/.test(elm) === false)
+const arraySbis = s.split("").map(function(elm){
+    if (/[A-Z]|[a-z]/.test(elm) === false){
         return elm;
+    }
     const min = minInterval(elm);
     const max = maxInterval(elm);
     if (elm.charCodeAt(0)+ k > max){
