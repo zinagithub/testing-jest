@@ -1,32 +1,32 @@
 function minInterval(elm) {
   if (elm.toUpperCase() === elm) {
-    return  65;
+    return 65;
   }
   return 97;
 }
-function maxInterval(elm){
+function maxInterval(elm) {
   if (elm.toUpperCase() === elm) {
     return 90;
   }  
   return 122;
 }
 function caesarCipher(s, k){   
-    k = k % 26;
-    const arraySbis = s.split('').map(function (elm) {
-    if (/[A-Z]|[a-z]/.test(elm) === false) {
-      return elm;
-    }
-    const min = minInterval(elm);
-    const max = maxInterval(elm);
-    if (elm.charCodeAt(0) + k > max) {
-      let val1 =max - elm.charCodeAt(0);
-      return  String.fromCharCode((min + (k - val1  - 1 ) )); 
-    }
-    else
-      return String.fromCharCode(elm.charCodeAt(0) + k);
+  k = k % 26;
+  const arraySbis = s.split('').map(function (elm) {
+  if (/[A-Z]|[a-z]/.test(elm) === false) {
+    return elm;
+  }
+  const min = minInterval(elm);
+  const max = maxInterval(elm);
+  if (elm.charCodeAt(0) + k > max) {
+    const val1 =max - elm.charCodeAt(0);
+    return String.fromCharCode((min + (k - val1  - 1 ) )); 
+  }
+  else
+    return String.fromCharCode(elm.charCodeAt(0) + k);
     
 });    
-    return (arraySbis.join(''));
+  return (arraySbis.join(''));
 }
 
 module.exports = caesarCipher;
