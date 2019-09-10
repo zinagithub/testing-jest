@@ -1,8 +1,8 @@
 function reverse(str) {
-	if (str)
+	if (str) {
 		return str.split('').reverse().join('');
-	else 
-		return '';
+	}
+    return '';
 }
 
 module.exports = reverse;

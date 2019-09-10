@@ -5,7 +5,8 @@ const capitalize = (myStr) => {
      if (index != -1)
 		arrStr[index] = arrStr[index].toUpperCase();
      return arrStr.join('');
- }else
+    }
     return '';
 }
+
 module.exports = capitalize;
