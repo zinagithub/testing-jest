@@ -31,7 +31,7 @@ describe('Calculator functions', () => {
 			expect(functions.sub(1)).toBe(1)
 		});
 		test('adding floating point numbers', () => {
-  			expect(functions.sub(0.2, 0.1)).toBeCloseTo(0.1); 
+            expect(functions.sub(0.2, 0.1)).toBeCloseTo(0.1); 
 		});
 		test('it should return 0 if no argument is specified', () => {
 			expect(functions.sub()).toBeFalsy();
