@@ -1,14 +1,14 @@
-function minInterval(elm){
-   if (elm.toUpperCase()  === elm)
-        return  65;
-    else
-        return 97;
+function minInterval(elm) {
+  if (elm.toUpperCase() === elm) {
+    return  65;
+  }
+  return 97;
 }
 function maxInterval(elm){
-   if (elm.toUpperCase()  === elm)
-        return 90;
-    else
-        return 122;
+  if (elm.toUpperCase() === elm) {
+    return 90;
+  }  
+  return 122;
 }
 function caesarCipher(s, k){   
     k = k % 26;
@@ -18,12 +18,12 @@ function caesarCipher(s, k){
     }
     const min = minInterval(elm);
     const max = maxInterval(elm);
-    if (elm.charCodeAt(0) + k > max){
-        let val1 =max - elm.charCodeAt(0);
-        return  String.fromCharCode((min + (k - val1  - 1 ) )); 
+    if (elm.charCodeAt(0) + k > max) {
+      let val1 =max - elm.charCodeAt(0);
+      return  String.fromCharCode((min + (k - val1  - 1 ) )); 
     }
     else
-        return String.fromCharCode(elm.charCodeAt(0) + k);
+      return String.fromCharCode(elm.charCodeAt(0) + k);
     
 });    
     return (arraySbis.join(''));
