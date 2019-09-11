@@ -23,7 +23,7 @@ function caesarCipher(s, k) {
       return String.fromCharCode((min + (kk - val1 - 1)));
     }
     return String.fromCharCode(elm.charCodeAt(0) + kk);
-  });    
+  });
   return (arraySbis.join(''));
 }
 
