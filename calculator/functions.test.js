@@ -5,11 +5,11 @@ describe('Calculator functions', () => {
     test('it should return 3 when adding 1 and 2', () => {
       expect(functions.add(1, 2)).toBe(3);
     });
-    test ('it should not return 4 when adding 1 and 2 ', () => {
+    test('it should not return 4 when adding 1 and 2 ', () => {
       expect(functions.add(1, 2)).not.toBe(4);
     });
-    test ('it should return the value of the argument when there is one argument', () => {
-      expect(functions.add(1)).toBe(1)
+    test('it should return the value of the argument when there is one argument', () => {
+      expect(functions.add(1)).toBe(1);
     });
     test('adding floating point numbers', () => {
       expect(functions.add(0.1, 0.2)).toBeCloseTo(0.3); 
@@ -26,8 +26,8 @@ describe('Calculator functions', () => {
     test('it should return negative result  when subtract 2 from 1', () => {
       expect(functions.sub(1, 2)).toBeLessThan(1);
     });
-    test ('it should return the value of the argument when there is one argument', () => {
-      expect(functions.sub(1)).toBe(1)
+    test('it should return the value of the argument when there is one argument', () => {
+      expect(functions.sub(1)).toBe(1);
     });
     test('adding floating point numbers', () => {
       expect(functions.sub(0.2, 0.1)).toBeCloseTo(0.1); 
@@ -54,8 +54,8 @@ describe('Calculator functions', () => {
     test('it should return 0 if no argument is specified', () => {
       expect(functions.multiply()).toBeFalsy();
     });
-    test ('it should return the value of the argument when there is one argument', () => {
-      expect(functions.multiply(1)).toBe(1)
+    test('it should return the value of the argument when there is one argument', () => {
+      expect(functions.multiply(1)).toBe(1);
     });
   });
 
