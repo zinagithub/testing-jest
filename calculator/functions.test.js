@@ -12,7 +12,7 @@ describe('Calculator functions', () => {
       expect(functions.add(1)).toBe(1);
     });
     test('adding floating point numbers', () => {
-      expect(functions.add(0.1, 0.2)).toBeCloseTo(0.3); 
+      expect(functions.add(0.1, 0.2)).toBeCloseTo(0.3);
     });
     test('it should return 0 if no argument is specified', () => {
       expect(functions.add()).toBeFalsy();
@@ -30,7 +30,7 @@ describe('Calculator functions', () => {
       expect(functions.sub(1)).toBe(1);
     });
     test('adding floating point numbers', () => {
-      expect(functions.sub(0.2, 0.1)).toBeCloseTo(0.1); 
+      expect(functions.sub(0.2, 0.1)).toBeCloseTo(0.1);
     });
     test('it should return 0 if no argument is specified', () => {
       expect(functions.sub()).toBeFalsy();
@@ -68,7 +68,7 @@ describe('Calculator functions', () => {
       expect(functions.devide(4, 4)).toBe(1);
     });
     test('it should return false or 0 when deviding 4 by 0', () => {
-      expect(functions.devide(4, 0)).toEqual('infinity')
+      expect(functions.devide(4, 0)).toEqual('infinity');
     });
     test('it should return 0 when deviding 0 by 4', () => {
       expect(functions.devide(0, 4)).toBe(0);

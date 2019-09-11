@@ -15,6 +15,7 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
-    
+        "no-nested-ternary" : "off",
+        "no-confusing-arrow": "off"
     }
 };
