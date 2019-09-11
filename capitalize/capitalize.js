@@ -8,6 +8,5 @@ const capitalize = (myStr) => {
     return arrStr.join('');
   }
   return '';
-}
-
+};
 module.exports = capitalize;
