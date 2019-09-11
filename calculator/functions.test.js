@@ -5,7 +5,6 @@ describe('Calculator functions', () => {
 		test('it should return 3 when adding 1 and 2', () => {
             expect(functions.add(1, 2)).toBe(3);
 		});
-
 		test ('it should not return 4 when adding 1 and 2 ', () => {
 			expect(functions.add(1, 2)).not.toBe(4);
 		});
