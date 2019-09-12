@@ -4,7 +4,7 @@ const functions = {
       return num1 + num2;
     }
     if (num1 && !num2) {
-        return num1;
+      return num1;
     }
     return 0;
   },
@@ -12,18 +12,18 @@ const functions = {
     if (num1 && num2) {
       return num1 - num2;
     }
-    if (num1 && !num2){
+    if (num1 && !num2) {
       return num1;
     }
     return 0;
   },
   multiply: (num1, num2) => {
-    if (num1 && num2){
+    if (num1 && num2) {
       return num1 * num2;
     }
     if (num1 && !num2) {
       return num1;
-    }  
+    }
     return 0;
   },
   devide: (num1, num2) => {
@@ -34,6 +34,6 @@ const functions = {
       return 'infinity';
     }
     return 0;
-  }
+  },
 };
 module.exports = functions;
